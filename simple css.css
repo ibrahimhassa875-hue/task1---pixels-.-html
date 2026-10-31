@@ -1,0 +1,196 @@
+/* Container to control layout and relative positioning */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust width as needed */
+}
+
+/* Style the search input and add left padding so text doesn't overlap the icon */
+.search-container .search {
+    width: 100%;
+    padding: 12px 12px 12px 45px; /* 45px on the left leaves room for the icon */
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Position the icon perfectly inside the left side of the input */
+.search-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%); /* Centers the icon vertically */
+    color: #888;
+    font-size: 16px;
+}
+/* Main Navbar Layout */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes Logo to left, Search to middle, Nav-right to right */
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.nav-logo img {
+    height: 45px;
+}
+
+/* Search Bar (Middle) */
+.search-container {
+    position: relative;
+    flex: 1;
+    max-width: 550px;
+    margin: 0 30px;
+}
+
+.search-container .search {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 16px;
+}
+
+/* Right Side Section */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Delivery & City Dropdown styling */
+.delivery-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.delivery-dropdown i {
+    font-size: 16px;
+}
+
+/* Style the city dropdown menu */
+.city-select {
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Icons on the far right */
+.nav-icon {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+/* Section Wrapper */
+.categories-section {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 40px;
+}
+
+/* Flexbox container to align items horizontally in a row */
+.categories-container {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Space between each category */
+    max-width: 1200px;
+    height: 50px;
+}
+
+/* Individual Category Links */
+.category-item {
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 0;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.category-item:hover {
+    color: #d32f2f; /* Red color on hover */
+}
+
+/* Active or Selected Link Styling (like 'Tires' in the photo) */
+.category-item.active {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* The red indicator line underneath the active item */
+.category-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #e53935; /* Fit & Fix Red */
+    border-radius: 2px 2px 0 0;
+}
+footer {
+    background-color: #1a1a1a; /* لون خلفية داكن ومناسب لأسفل الصفحة */
+    color: #ffffff;            /* لون النص */
+    padding: 40px 20px;       /* مسافة داخلية من الأعلى والأسفل والجوانب */
+    text-align: center;       /* محاذاة النص في المنتصف */
+}
+
+footer h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* لتنسيق الحاوية التي تضم الصور */
+footer div {
+    display: flex;
+    justify-content: center; /* توسيط الصور أفقيًا */
+    align-items: center;     /* محاذاة الصور رأسيًا */
+    gap: 20px;               /* مسافة متساوية بين الصور */
+    flex-wrap: wrap;         /* السماح للصور بالانتقال للسطر التالي في الشاشات الصغيرة */
+}
+
+/* لتنسيق الصور وتوحيد أحجامها */
+footer img {
+    width: 120px;            /* عرض ثابت لكل صورة */
+    height: 120px;           /* ارتفاع ثابت */
+    object-fit: cover;       /* الحفاظ على أبعاد الصورة دون تشويهها */
+    border-radius: 8px;      /* حواف دائرية خفيفة */
+    background-color: #fff;  /* خلفية بيضاء للصور إذا كانت شفافة */
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* ظل خفيف لإبراز المنتجات */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* حركة سلسة عند التمرير */
+}
+
+/* تأثير عند تمرير الماوس على الصور (Hover) */
+footer img:hover {
+    transform: translateY(-5px) scale(1.05); /* تكبير ورفع الصورة قليلاً */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}

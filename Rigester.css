@@ -1,0 +1,65 @@
+/* Center everything on the page */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Form container box */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between each input */
+    width: 320px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Style the inputs */
+.form-container input {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-container input:focus {
+    border-color: #e53935;
+}
+
+/* Style the button and link */
+.form-container button {
+    background-color: #e53935;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-container button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+
+.form-container button:hover {
+    background-color: #c62828;
+}

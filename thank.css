@@ -1,0 +1,9 @@
+/* Make the body take up the full height of the browser screen */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    text-align: center;      /* Centers the text lines themselves */
+}
